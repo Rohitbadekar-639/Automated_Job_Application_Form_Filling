@@ -49,3 +49,7 @@ This project is licensed under the MIT License.
 ## Disclaimer
 
 This extension is provided as-is, without any guarantees or warranty. The authors are not responsible for any damage or data loss that may occur as a result of using this extension.
+
+## Privacy Policy Link: (Please go through our privacy policy for the questions and doubts related to privacy and security)
+
+https://rohitbadekar-639.github.io/job-application-autofiller/privacy-policy.html
