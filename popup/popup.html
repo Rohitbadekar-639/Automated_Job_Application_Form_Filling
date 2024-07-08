@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Autofiller</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h2>Job Application Autofiller</h2>
+  <form id="userDetailsForm">
+    <div class="section">
+      <h3>Personal Information</h3>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+      
+      <label for="address">Address:</label>
+      <input type="text" id="address" required>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" required>
+      
+      <label for="state">State:</label>
+      <input type="text" id="state" required>
+      
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" required>
+      
+      <label for="country">Country:</label>
+      <input type="text" id="country" required>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <label for="highestDegree">Highest Degree:</label>
+      <select id="highestDegree" required>
+        <option value="">Select Degree</option>
+        <option value="High School">High School</option>
+        <option value="Associate's">Associate's</option>
+        <option value="Bachelor's">Bachelor's</option>
+        <option value="Master's">Master's</option>
+        <option value="Doctorate">Doctorate</option>
+      </select>
+      
+      <label for="fieldOfStudy">Field of Study:</label>
+      <input type="text" id="fieldOfStudy" required>
+      
+      <label for="university">University/Institution:</label>
+      <input type="text" id="university" required>
+      
+      <label for="graduationYear">Graduation Year:</label>
+      <input type="number" id="graduationYear" min="1900" max="2099" required>
+    </div>
+
+    <div class="section">
+      <h3>Work Experience</h3>
+      <label for="currentJobTitle">Current/Most Recent Job Title:</label>
+      <input type="text" id="currentJobTitle" required>
+      
+      <label for="currentCompany">Current/Most Recent Company:</label>
+      <input type="text" id="currentCompany" required>
+      
+      <label for="workStartDate">Start Date:</label>
+      <input type="date" id="workStartDate" required>
+      
+      <label for="workEndDate">End Date (leave blank if current):</label>
+      <input type="date" id="workEndDate">
+      
+      <label for="jobResponsibilities">Job Responsibilities:</label>
+      <textarea id="jobResponsibilities" rows="4" required></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Skills</h3>
+      <label for="skills">Skills (comma-separated):</label>
+      <textarea id="skills" rows="3" required></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Additional Information</h3>
+      <label for="linkedIn">LinkedIn Profile:</label>
+      <input type="url" id="linkedIn">
+      
+      <label for="portfolio">Portfolio Website:</label>
+      <input type="url" id="portfolio">
+      
+      <label for="githubUsername">GitHub Username:</label>
+      <input type="text" id="githubUsername">
+    </div>
+
+    <button type="submit">Save Details</button>
+  </form>
+  <button id="deleteData">Delete My Data</button>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

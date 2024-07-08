@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Job Application Autofiller",
+  "version": "1.0",
+  "description": "Autofills job application forms using AI/ML techniques",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "privacy_policy": "https://rohitbadekar-639.github.io/job-application-autofiller/privacy-policy.html"
+}
